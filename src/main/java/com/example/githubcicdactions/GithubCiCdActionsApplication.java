@@ -3,9 +3,11 @@ package com.example.githubcicdactions;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-public class GithubCicdActionsApplication {
+@RestController
+public class GithubCiCdActionsApplication {
 
     @GetMapping("/welcome")
     public String welcome() {
@@ -13,7 +15,7 @@ public class GithubCicdActionsApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(GithubCicdActionsApplication.class, args);
+        SpringApplication.run(GithubCiCdActionsApplication.class, args);
     }
 
 }
